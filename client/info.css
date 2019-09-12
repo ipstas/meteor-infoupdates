@@ -1,0 +1,16 @@
+.infosPop{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 500px !important;
+	height: 600px !important;
+	max-width: 80wv !important;
+	max-height: 90vh !important;
+	background-color: aliceblue;
+}
+.infoPopBtn{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 1000;	
+}

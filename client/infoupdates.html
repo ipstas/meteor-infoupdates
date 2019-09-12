@@ -1,0 +1,65 @@
+<template name="infoPop">
+	<section id="infos" class="container animated fadeIn jumbotron infosPop">
+		<div class="pointer align-items-end text-right infoPopBtn ack" aria-label="Close">
+			<i class="fa fa-window-close"></i>
+		</div>
+<!-- 		<button type="button" class="pointer ack close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button> -->
+		{{>infoUpdates}}
+	</section>
+</template>
+
+<template name="infoUpdates">
+	<section id="infos" class="animated fadeIn">
+		{{#if isInRole 'admin' 'admGroup'}}
+			<div class="row">
+				<div class="col-12 col-xs-12">
+					{{#unless newRecord}}
+						{{#if isInRole 'admin' 'admGroup'}}<div class="btn btn-xs btn-info newInfoRecord"><b>New</b></div>{{/if}}
+					{{else}}
+						{{> quickForm class="" id="insertInfo" collection=collection schema=schema	type="method" meteormethod="user.infoinsert" doc=this}}
+						<div class="btn btn-sm btn-outline-secondary cancel">Close</div>					
+					{{/unless}}			
+				</div>
+			</div>
+		{{/if}}
+		{{#each infos}}
+			<div class="row">
+				<div class="col-12 col-xs-12">
+					{{#if $eq _id editRecord}}
+						{{> quickForm class="" id="updateInfo" collection=collection schema=schema type="update" doc=this}}
+						<div class="btn btn-outline-secondary cancel">Close</div>	
+					{{else}}
+						{{> infoPost}}
+						{{#if isInRole 'admin' 'admGroup'}}
+							<div class="btn btn-sm btn-outline-warning editInfoRecord"><b>Edit</b></div>
+							<div class="btn btn-sm btn-outline-danger delInfoRecord"><b>Delete</b></div>
+						{{/if}}
+						<hr>
+					{{/if}}
+				</div>
+			</div>
+		{{/each}}
+	</section>
+</template>
+
+<template name="infoPost">
+	<section id="blogTags" class="animated fadeIn">	
+		<p>
+			{{{text}}}		
+		</p>
+		<div class="fontsmall text-muted">{{scheduledAt}}</div>
+	</section>
+</template>
+
+<template name="infoNav">
+	{{#if count}}
+		<a class="animated fadeInTop activateIt h2" href="#">
+			<i class="fa fa-fw fa-circle-o animated pulse {{activatedClass}}" aria-hidden="true" data-toggle="tooltip" title="There are updates"></i>
+		</a>
+	{{/if}}
+	{{#if activated}}
+		{{>infoPop}}
+	{{/if}}
+</template>

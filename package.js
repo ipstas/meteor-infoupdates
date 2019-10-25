@@ -54,6 +54,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('meteor-infoupdates');
+  //api.use('meteor-infoupdates');
   api.mainModule('meteor-infoupdates-tests.js');
 });

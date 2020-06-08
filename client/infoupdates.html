@@ -11,7 +11,7 @@
 </template>
 
 <template name="infoUpdates">
-	<section id="infos" class="animated fadeIn">
+	<section id="infoUpdates" class="animated fadeIn">
 		{{#if isInRole 'admin' 'admGroup'}}
 			<div class="row">
 				<div class="col-12 col-xs-12">
@@ -55,8 +55,8 @@
 
 <template name="infoNav">
 	{{#if count}}
-		<a class="animated fadeInTop activateIt h2" href="#">
-			<i class="fa fa-fw fa-circle-o animated pulse {{activatedClass}}" aria-hidden="true" data-toggle="tooltip" title="There are updates"></i>
+		<a class="animated fadeInTop activateIt h2 {{activatedClass}}" href="#">
+			<i class="fas fa-fw fa-circle-o fa-sticky-note animated pulse " aria-hidden="true" data-toggle="tooltip" title="There are updates"></i>
 		</a>
 	{{/if}}
 	{{#if activated}}

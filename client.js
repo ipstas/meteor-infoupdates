@@ -11,7 +11,7 @@ import './client/infoupdates.js';
 
 
 
-console.log('[ipstas:meteor-blog] client imported:', name, this);
+console.log('[ipstas:meteor-infoupdates] client imported:', name, this);
 
 // Variables exported by this module can be imported by other packages and
 // applications. See ipstas-meteor-blog-tests.js for an example of importing.

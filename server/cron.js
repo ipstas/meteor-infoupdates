@@ -17,7 +17,7 @@ const runJob = function(){
 			MeteorInfoCollections.Userupdates.update({_id: userupdate._id}, {$set: {pushed: true}});
 		}	
 	}
-	console.log('[infoupdates cron] update:', update, userupdates.length, userupdates);
+	console.log('[infoupdates cron] update:', userupdates.length, userupdates);
 }
 
 const cronJob = new CronJob({

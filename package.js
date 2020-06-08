@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ipstas:meteor-infoupdates',
-  version: '0.0.3',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'Keep users updated about new developments',
   // URL to the Git repository containing the source code for this package.
@@ -22,8 +22,8 @@ Package.onUse(function(api) {
 		//'bootstrap-datepicker': '1.8.0',
 		//'cloudinary': '1.13.2',
 		//'medium-editor': '5.23.3',
-		'jquery-ui-bundle': '1.12.1-migrate',
-		'cron': '1.7.2',
+		//'jquery-ui-bundle': '1.12.1-migrate',
+		'cron': '1.8.2',
 		//'medium-editor-insert-plugin': '2.5.1'
 		//'eonasdan-bootstrap-datetimepicker': '4.17.47'
 	});

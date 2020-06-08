@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'meteor-infoupdates',
+  name: 'ipstas:meteor-infoupdates',
   version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'Keep users updated about new developments',

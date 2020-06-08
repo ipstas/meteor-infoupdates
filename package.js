@@ -24,13 +24,13 @@ Package.onUse(function(api) {
 	});
 	
 	api.use([
-		'ecmascript',
-		'check',
-		'mongo',
-		'templating',
-		'blaze',
-		'underscore',
-		'aldeed:autoform'
+		//'ecmascript',
+		//'check',
+		//'mongo',
+		//'templating',
+		//'blaze',
+		//'underscore',
+		//'aldeed:autoform'
 	]);
 	
 	api.addFiles([

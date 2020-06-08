@@ -8,6 +8,8 @@ In a Meteor app directory, enter:
 
 ```
 $ meteor add ipstas:meteor-infoupdates
+then
+meteor npm i --save cron
 ```
 
 ## Example usage

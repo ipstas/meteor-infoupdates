@@ -20,7 +20,7 @@ Package.onUse(function(api) {
 		//'jquery-ui-bundle': '1.12.1-migrate',	
 		//'medium-editor-insert-plugin': '2.5.1'
 		//'eonasdan-bootstrap-datetimepicker': '4.17.47',
-		'cron': '1.8.2'
+		//'cron': '1.8.2'
 	});
 	
 	api.use([

@@ -8,6 +8,7 @@ import './client/subs.js';
 //import './client/route.js';
 import './client/functions.js';
 import './client/infoupdates.js';
+import './client/infoupdates.html';
 
 
 

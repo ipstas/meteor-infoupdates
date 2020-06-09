@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'ipstas:meteor-infoupdates',
-	version: '0.0.5',
+	version: '0.0.6',
 	summary: 'Keep users updated about new developments',
 	git: 'https://github.com/ipstas/meteor-infoupdates',
 	documentation: 'README.md'
@@ -24,14 +24,14 @@ Package.onUse(function(api) {
 	});
 	
 	api.use([
-		'ecmascript@0.1.0',
-		'check@1.0.0',
-		'mongo@1.4.0',
-		'templating@1.0.0',
+		'ecmascript',
+		'check',
+		'mongo',
+		'underscore',
+		'templating@1.3.2',
 		'blaze@2.0.0',
-		'mediumeditor:mediumeditor@5.0.0',
-		'underscore@1.0.0',
-		'aldeed:autoform@5.0.0'
+		'mediumeditor:mediumeditor@5.0.0',		
+		'aldeed:autoform@6.0.0'
 	]);
 	
 	api.addFiles([

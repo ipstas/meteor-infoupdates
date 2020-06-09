@@ -17,7 +17,7 @@ Package.onUse(function(api) {
 		//'bootstrap-datepicker': '1.8.0',
 		//'cloudinary': '1.13.2',
 		//'medium-editor': '5.23.3',
-		'jquery-ui-bundle': '1.12.1-migrate',	
+		//'jquery-ui-bundle': '1.12.1-migrate',	
 		//'medium-editor-insert-plugin': '2.5.1'
 		//'eonasdan-bootstrap-datetimepicker': '4.17.47',
 		//'cron': '1.8.2'
